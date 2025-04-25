@@ -19,7 +19,7 @@ else:
     # production
     print("Loading config.production.")
     app.config.from_object('azureproject.production')
-
+print("Hola")
 app.config.update(
     SQLALCHEMY_DATABASE_URI=app.config.get('DATABASE_URI'),
     SQLALCHEMY_TRACK_MODIFICATIONS=False,
